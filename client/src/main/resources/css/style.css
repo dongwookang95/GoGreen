@@ -1,0 +1,466 @@
+/*
+    Color palette:
+    #f0f7da   ->   #c9df8a   ->   #77ab59   ->   #36802d   ->   #234d20
+*/
+* {
+    -fx-txt: rgb(35, 77, 32);
+    -fx-fg: rgb(54, 128, 45);
+    -fx-alt1: rgb(119, 171, 89);
+    -fx-alt2: rgb(240, 247, 218);
+    -fx-bg: rgb(201, 223, 138);
+    /*-fx-border-color: black;*/
+}
+
+Label {
+    -fx-text-fill: -fx-txt;
+}
+
+Button {
+    -fx-background-color: -fx-alt1;
+    -fx-content-display: CENTER;
+    -fx-text-alignment: CENTER;
+}
+
+Button:hover {
+    -fx-background-color: -fx-fg;
+}
+
+TextField, PasswordField {
+    -fx-background-color: -fx-bg;
+}
+
+.one-size {
+    -fx-pref-height: 400px;
+    -fx-pref-width: 600px;
+}
+
+.one-style {
+    -fx-tab-min-width: 275px;
+}
+
+.two-size {
+    -fx-pref-height: 600px;
+    -fx-pref-width: 800px;
+}
+
+.two-style {
+    -fx-tab-min-width: 175px;
+}
+
+/* Scene One */
+#one-header-wrapper {
+    -fx-pref-width: 200px;
+    -fx-pref-height: 150px;
+    -fx-translate-x: 200px;
+}
+
+#one-logo {
+    -fx-translate-x: 50px;
+}
+
+#one-title {
+    -fx-translate-x: 50px;
+    -fx-translate-y: 110px;
+    -fx-pref-height: 30px;
+    -fx-pref-width: 100px;
+    -fx-alignment: CENTER;
+    -fx-font-size: 20px;
+}
+
+.one-txt-wrapper {
+    -fx-pref-height: 35px;
+    -fx-pref-width: 200px;
+    -fx-translate-x: 200px;
+}
+
+#one-usr-wrapper {
+    -fx-translate-y: 160px;
+}
+
+#one-psw-wrapper {
+    -fx-translate-y: 195px;
+}
+
+#one-psw-match-wrapper {
+    -fx-translate-y: 230px;
+}
+
+.one-txt-icon {
+    -fx-translate-x: 5px;
+    -fx-translate-y: 5px;
+    -fx-pref-height: 25px;
+    -fx-pref-width: 25px;
+}
+
+.one-txt-area {
+    -fx-translate-x: 35px;
+    -fx-pref-height: 25px;
+    -fx-translate-y: 5px;
+    -fx-pref-width: 150px;
+}
+
+#one-login-submit-wrapper {
+    -fx-translate-x: 200px;
+    -fx-translate-y: 230px;
+    -fx-pref-height: 100px;
+    -fx-pref-width: 200px;
+}
+
+#one-register-submit-wrapper {
+    -fx-translate-x: 200px;
+    -fx-translate-y: 265px;
+    -fx-pref-height: 100px;
+    -fx-pref-width: 200px;
+}
+
+#one-auth-message {
+    -fx-translate-y: 5px;
+    -fx-pref-width: 200px;
+    -fx-alignment: CENTER;
+}
+
+#one-submit {
+    -fx-translate-x: 70px;
+    -fx-translate-y: 30px;
+    -fx-pref-width: 60px;
+}
+
+/*End of Scene One */
+
+/*Scene Two Top view */
+#two-top-size {
+    -fx-pref-width: 800px;
+    -fx-pref-height: 110px;
+}
+
+#two-top-logo {
+    -fx-translate-x: 10px;
+    -fx-translate-y: 5px;
+}
+
+#two-top-logout {
+    -fx-translate-x: 695px;
+    -fx-translate-y: 25px;
+}
+
+#two-top-title {
+    -fx-translate-x: 155px;
+    -fx-translate-y: 20px;
+    -fx-pref-height: 30px;
+    -fx-pref-width: 300px;
+}
+
+#two-top-user {
+    -fx-translate-x: 470px;
+    -fx-translate-y: 25px;
+    -fx-pref-width: 85px;
+    -fx-pref-height: 20px;
+    -fx-alignment: CENTER;
+}
+
+.two-top-badge-wrapper {
+    -fx-translate-y: 50px;
+    -fx-pref-width: 120px;
+    -fx-pref-height: 30px;
+}
+
+#two-top-badge-wrapper-one {
+    -fx-translate-x: 155px;
+}
+
+#two-top-badge-wrapper-two {
+    -fx-translate-x: 295px;
+}
+
+#two-top-badge-wrapper-three {
+    -fx-translate-x: 450px;
+}
+
+.two-top-badge {
+    -fx-translate-x: 30px;
+    -fx-translate-y: 5px;
+    -fx-pref-width: 170px;
+    -fx-pref-height: 20px;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.two-top-icon {
+    -fx-translate-y: 5px;
+}
+
+/* Scene Two Center View */
+#two-center-size {
+    -fx-pref-width: 800px;
+    -fx-pref-height: 490px;
+    -fx-tab-min-width: 125px;
+}
+
+/* Overview tab */
+
+#two-overview-top-pane {
+    -fx-pref-width: 800px;
+    -fx-pref-height: 50px;
+}
+
+#two-overview-reload{
+    -fx-translate-x: 725px;
+    -fx-max-width: 25px;
+    -fx-max-height: 25px;
+    -fx-graphic: url('../img/reload-dark-icon.png');
+}
+
+#two-overview-table{
+    -fx-translate-x: 25px;
+    -fx-translate-y: 50px;
+    -fx-pref-width: 750px;
+    -fx-pref-height: 350px;
+}
+
+/* Add Habit tab */
+#two-habit-main-pane {
+    -fx-translate-x: 15px;
+    -fx-translate-y: 10px;
+    -fx-pref-height: 50px;
+    -fx-pref-width: 150px;
+}
+
+#two-habit-sub-pane {
+    -fx-translate-x: 15px;
+    -fx-translate-y: 100px;
+    -fx-pref-height: 50px;
+    -fx-pref-width: 150px;
+}
+
+#two-habit-response-label{
+    -fx-translate-x: 15px;
+    -fx-translate-y: 175px;
+    -fx-pref-height: 25px;
+    -fx-pref-width: 150px;
+}
+
+#two-habit-right-pane {
+    -fx-translate-x: 180px;
+    -fx-translate-y: 10px;
+    -fx-pref-height: 400px;
+    -fx-pref-width: 300px;
+}
+
+#two-habit-right-label{
+    -fx-translate-x: 450px;
+    -fx-translate-y: 10px;
+    -fx-pref-height: 75px;
+    -fx-pref-width: 200px;
+}
+
+.two-habit-attribute-pane {
+    -fx-translate-x: 25px;
+    -fx-pref-height: 50px;
+    -fx-pref-width: 150px;
+}
+
+.two-habit-label {
+    -fx-pref-height: 20px;
+    -fx-pref-width: 150px;
+}
+
+.two-habit-combo {
+    -fx-pref-height: 25px;
+    -fx-pref-width: 150px;
+    -fx-translate-y: 25px;
+}
+
+.two-habit-text {
+    -fx-pref-height: 25px;
+    -fx-pref-width: 150px;
+    -fx-translate-y: 25px;
+}
+
+#two-habit-submit {
+    -fx-translate-x: 695px;
+    -fx-translate-y: 400px;
+}
+
+/* Edit Habit Tab */
+#two-edit-top-pane {
+    -fx-pref-width: 800px;
+    -fx-pref-height: 50px;
+}
+
+.two-edit-label {
+    -fx-pref-width: 75px;
+    -fx-pref-height: 20px;
+}
+
+.two-edit-combo {
+    -fx-pref-width: 100px;
+    -fx-pref-height: 20px;
+}
+
+#two-edit-cat-label {
+    -fx-translate-y: 10px;
+    -fx-translate-x: 40px;
+}
+
+#two-edit-cat-combo {
+    -fx-translate-y: 10px;
+    -fx-translate-x: 140px;
+}
+
+#two-edit-sub-label {
+    -fx-translate-x: 290px;
+    -fx-translate-y: 10px;
+}
+
+#two-edit-sub-combo {
+    -fx-translate-x: 375px;
+    -fx-translate-y: 10px;
+}
+
+#two-edit-top-button {
+    -fx-translate-y: 15px;
+    -fx-translate-x: 695px;
+    -fx-pref-width: 55px;
+}
+
+#two-edit-table-view {
+    -fx-translate-x: 25px;
+    -fx-translate-y: 50px;
+    -fx-pref-width: 750px;
+    -fx-pref-height: 350px;
+}
+
+#two-edit-bottom-pane {
+    -fx-pref-width: 720px;
+    -fx-pref-height: 50px;
+    -fx-translate-y: 400px;
+    -fx-translate-x: 40px;
+}
+.two-edit-attribute-pane{
+    -fx-pref-width: 180px;
+    -fx-pref-height: 20px;
+    -fx-translate-y: 15px;
+}
+.two-edit-text {
+    -fx-pref-width: 100px;
+    -fx-pref-height: 20px;
+}
+
+#two-edit-bottom-button {
+    -fx-translate-x: 655px;
+    -fx-translate-y: 15px;
+    -fx-pref-width: 55px;
+}
+
+/* Friend Overview Tab */
+
+#two-friend-top-pane {
+    -fx-pref-width: 800px;
+    -fx-pref-height: 50px;
+}
+
+.two-friend-label {
+    -fx-pref-width: 130px;
+    -fx-pref-height: 20px;
+    -fx-translate-y: 15px;
+}
+
+.two-friend-combo {
+    -fx-pref-width: 150px;
+    -fx-pref-height: 20px;
+    -fx-translate-y: 15px;
+}
+
+#two-friend-search-label {
+    -fx-translate-x: 35px;
+}
+
+#two-friend-search-combo {
+    -fx-translate-x: 165px;
+}
+
+#two-friend-top-button {
+    -fx-translate-y: 15px;
+    -fx-translate-x: 695px;
+    -fx-pref-width: 55px;
+}
+
+#two-friend-table-view {
+    -fx-translate-x: 25px;
+    -fx-translate-y: 50px;
+    -fx-pref-width: 750px;
+    -fx-pref-height: 350px;
+}
+
+/* Search Friend Tab */
+#two-search-left {
+    -fx-pref-width: 250px;
+    -fx-pref-height: 500px;
+}
+
+#two-search-top-left-text {
+    -fx-pref-width: 150px;
+    -fx-translate-x: 25px;
+    -fx-translate-y: 15px;
+}
+
+#two-search-top-left-button {
+    -fx-translate-x: 180px;
+    -fx-translate-y: 15px;
+    -fx-pref-width: 45px;
+}
+
+#two-search-left-table {
+    -fx-pref-width: 200px;
+    -fx-pref-height: 350px;
+    -fx-translate-x: 25px;
+    -fx-translate-y: 50px;
+}
+
+#two-search-bottom-left-label{
+    -fx-pref-width: 150px;
+    -fx-pref-height: 50px;
+    -fx-translate-x: 25px;
+    -fx-translate-y: 400px;
+}
+
+#two-search-bottom-left-button{
+    -fx-translate-x: 180px;
+    -fx-translate-y: 410px;
+    -fx-pref-width: 45px;
+}
+
+#two-search-right {
+    -fx-pref-width: 250px;
+    -fx-pref-height: 500px;
+    -fx-box-border: transparent;
+}
+
+#two-search-right-pane {
+    -fx-pref-width: 200px;
+    -fx-pref-height: 50px;
+    -fx-translate-x: 25px;
+}
+
+#two-search-right-label {
+    -fx-pref-width: 200px;
+    -fx-pref-height: 25px;
+}
+
+#two-search-right-accept {
+    -fx-pref-width: 100px;
+    -fx-pref-height: 25px;
+    -fx-translate-y: 25px;
+}
+
+#two-search-right-decline {
+    -fx-pref-width: 100px;
+    -fx-pref-height: 25px;
+    -fx-translate-x: 100px;
+    -fx-translate-y: 25px;
+}
+
+#two-search-mid{
+    -fx-pref-width: 250px;
+}
+
+/* End of Scene Two */

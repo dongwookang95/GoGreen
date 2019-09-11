@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx"
+            fx:controller="backend.controller.tab.AddHabitController" id="two-size">
+    <Pane id="two-habit-main-pane">
+        <Label styleClass="two-habit-label" text="Main Category"/>
+        <ComboBox styleClass="two-habit-combo" fx:id="categoryComboBox"/>
+    </Pane>
+    <Pane id="two-habit-sub-pane">
+        <Label styleClass="two-habit-label" text="Sub Category"/>
+        <ComboBox styleClass="two-habit-combo" fx:id="subcategoryComboBox"/>
+    </Pane>
+    <Label id="two-habit-response-label" fx:id="responseLabel" />
+    <Pane id="two-habit-right-pane" fx:id="attributesPane" />
+    <Label id="two-habit-right-label" fx:id="attributesLabel" />
+    <Button id="two-habit-submit" mnemonicParsing="false" text="Submit" fx:id="submit"/>
+</AnchorPane>

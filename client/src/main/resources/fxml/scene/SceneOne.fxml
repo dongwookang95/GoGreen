@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx">
+    <TabPane styleClass="one-size,one-style" side="BOTTOM" tabClosingPolicy="UNAVAILABLE">
+        <Tab text="Login">
+            <fx:include source="../tab/Login.fxml"/>
+        </Tab>
+        <Tab text="Sign Up">
+            <fx:include source="../tab/SignUp.fxml"/>
+        </Tab>
+    </TabPane>
+</AnchorPane>

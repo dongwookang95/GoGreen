@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<HBox xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx"
+      fx:controller="backend.controller.tab.SearchController" styleClass="two-size" fx:id="horizontalBox">
+    <AnchorPane id="two-search-left">
+        <TextField id="two-search-top-left-text" text="Search user here..." fx:id="userSearchBar"/>
+        <Button id="two-search-top-left-button" mnemonicParsing="false" text="Go" fx:id="userSearchButton"/>
+        <TableView id="two-search-left-table" fx:id="userView">
+            <columns>
+                <TableColumn text="Username" fx:id="userUsernameCol"/>
+            </columns>
+        </TableView>
+        <Label id="two-search-bottom-left-label" fx:id="userLabel"/>
+        <Button id="two-search-bottom-left-button" mnemonicParsing="false" text="Yes" fx:id="userInviteButton"/>
+    </AnchorPane>
+
+    <AnchorPane id="two-search-mid">
+        <TextField id="two-search-top-left-text" text="Search friend here..." fx:id="friendSearchBar"/>
+        <Button id="two-search-top-left-button" mnemonicParsing="false" text="Go" fx:id="friendSearchButton"/>
+        <TableView id="two-search-left-table" fx:id="friendView">
+            <columns>
+                <TableColumn text="Username" fx:id="friendUsernameCol"/>
+            </columns>
+        </TableView>
+        <Label id="two-search-bottom-left-label" fx:id="friendLabel"/>
+        <Button id="two-search-bottom-left-button" mnemonicParsing="false" text="Yes" fx:id="friendDeleteButton"/>
+    </AnchorPane>
+
+    <ScrollPane id="two-search-right">
+        <AnchorPane fx:id="rightSide">
+
+        </AnchorPane>
+    </ScrollPane>
+
+</HBox>

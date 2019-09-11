@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx"
+            fx:controller="backend.controller.tab.SignUpController" styleClass="one-size">
+    <Pane id="one-header-wrapper">
+        <ImageView fitHeight="100.0" fitWidth="100.0" id="one-logo">
+            <Image url="@../../img/oak-icon.png"/>
+        </ImageView>
+        <Label text="GoGreen" id="one-title"/>
+    </Pane>
+    <Pane id="one-usr-wrapper" styleClass="one-txt-wrapper">
+        <ImageView fitHeight="25.0" fitWidth="25.0" styleClass="one-txt-icon">
+            <Image url="@../../img/user-icon.png"/>
+        </ImageView>
+        <TextField text="Username" fx:id="username" styleClass="one-txt-area"/>
+    </Pane>
+    <Pane id="one-psw-wrapper" styleClass="one-txt-wrapper">
+        <ImageView fitHeight="25.0" fitWidth="25.0" styleClass="one-txt-icon">
+            <Image url="@../../img/lock-icon.png"/>
+        </ImageView>
+        <PasswordField text="Password" fx:id="password" styleClass="one-txt-area"/>
+    </Pane>
+    <Pane id="one-psw-match-wrapper" styleClass="one-txt-wrapper">
+        <ImageView fitHeight="25.0" fitWidth="25.0" styleClass="one-txt-icon">
+            <Image url="@../../img/lock-icon.png"/>
+        </ImageView>
+        <PasswordField text="Password" fx:id="password1" styleClass="one-txt-area"/>
+    </Pane>
+    <Pane id="one-register-submit-wrapper">
+        <Label fx:id="regMessage" id="one-auth-message"/>
+        <Button text="Sign In" fx:id="register" id="one-submit" mnemonicParsing="false"/>
+    </Pane>
+</AnchorPane>

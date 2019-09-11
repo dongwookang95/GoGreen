@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx"
+            fx:controller="backend.controller.tab.FriendOverviewController" styleClass="two-size">
+
+    <!-- row for looking up a friend -->
+    <Pane id="two-friend-top-pane">
+        <Label id="two-friend-search-label" styleClass="two-friend-label" text="Lookup a friend:"/>
+        
+        <!-- there is a button that the user has to click to show the habits of a friend
+        <ComboBox id="two-friend-search-combo" styleClass="two-friend-combo" fx:id="friendSearchCBox"/>
+        <Button id="two-friend-top-button" text="Show" fx:id="show" onAction="#setTableElements"/> -->
+
+        <!-- there is no button, show upon selecting the friend -->
+        <ComboBox id="two-friend-search-combo" styleClass="two-friend-combo" fx:id="friendSearchCBox" onAction="#setTableElements"/>
+    </Pane>
+
+    <!-- table with habits of given friend -->
+    <TableView id="two-friend-table-view" fx:id="view">
+        <columns>
+            <TableColumn id="two-friend-table-col1" text="Habit" fx:id="col1"/>
+            <TableColumn id="two-friend-table-col2" text="CO2" fx:id="col2"/>
+        </columns>
+    </TableView>
+
+</AnchorPane>

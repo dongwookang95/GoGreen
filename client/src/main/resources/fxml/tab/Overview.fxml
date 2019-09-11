@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx"
+            fx:controller="backend.controller.tab.OverviewController" styleClass="two-size">
+    <Pane id="two-overview-top-pane">
+        <Button id="two-overview-reload" fx:id="reload" />
+    </Pane>
+
+    <TableView id="two-overview-table" fx:id="view">
+        <columns>
+            <TableColumn id="two-overview-table-col1" text="Habit" fx:id="col1"/>
+            <TableColumn id="two-overview-table-col2" text="CO2" fx:id="col2"/>
+        </columns>
+    </TableView>
+
+</AnchorPane>

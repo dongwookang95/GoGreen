@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx" styleClass="two-size">
+    <BorderPane>
+        <top>
+            <Pane id="two-top-size">
+                <fx:include source="../tab/SceneTwoTop.fxml"/>
+            </Pane>
+        </top>
+        <center>
+            <TabPane id="two-center-size" side="BOTTOM" tabClosingPolicy="UNAVAILABLE">
+                <tabs>
+                    <Tab text="Overview">
+                        <fx:include source="../tab/Overview.fxml"/>
+                    </Tab>
+                    <Tab text="Add habit">
+                        <fx:include source="../tab/AddHabit.fxml"/>
+                    </Tab>
+                    <Tab text="Edit habit">
+                        <fx:include source="../tab/EditHabit.fxml"/>
+                    </Tab>
+                    <Tab text="Friends Overview">
+                        <fx:include source="../tab/FriendOverview.fxml"/>
+                    </Tab>
+                    <Tab text="Friend Search">
+                        <fx:include source="../tab/Search.fxml"/>
+                    </Tab>
+                </tabs>
+            </TabPane>
+        </center>
+    </BorderPane>
+</AnchorPane>
